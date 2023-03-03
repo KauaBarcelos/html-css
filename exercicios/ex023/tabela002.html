@@ -15,13 +15,27 @@
                 border-collapse: collapse;
                 text-align: center;
                 box-shadow: 1px 1px 0px #0000004f;
+                position: relative;
             }
             thead, tfoot{
                 background-color: #808080c5;
                 color: #000000;
             }
+            thead > tr > th{
+                position: sticky;
+                top: -1px;
+                background-color: #808080c5;
+            }
+            tbody > tr:nth-child(even){
+                background-color: lightgrey;               
+            }
             td, th{
                 border: 1px solid black;
+                padding: 10px;
+            }
+            caption{
+                font-size: 1.5em;
+                font-weight: bold;
                 padding: 10px;
             }
         .num{
@@ -35,10 +49,11 @@
 <body>
      <h1>Uso de tabelas grandes</h1>
      <table>
+        <caption>População das Unidades Federativas</caption>
             <thead>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </thead>
             <tbody>
                 <tr>
@@ -179,7 +194,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                 <td colspan="2" class="l"><strong>Total</strong></td>
+                 <td scope="row" colspan="2" class="l"><strong>Total</strong></td>
                         <td class="num"><strong>213.317.639</strong>
                     
                 </tr>

@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font3: 'Sriracha', cursive;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+
+html, body{
+    min-height: 100vh;
+    /* background-color: darkgray; */
+    font-family: var(--font1);
+}
+
+header {
+    background-color: #000000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 3px 3px 13px 0px #00000059;
+}
+
+header>h1{
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-weight: lighter;
+    font-family: var(--font3);
+    text-shadow: 2px 2px 3px #00000073;
+}
+
+header>p {
+    padding-bottom: 50px;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
+
+nav>a {
+    text-decoration: none;
+    padding: 10px;
+    text-align: left;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+nav>a:hover {
+    background-color: #ebe6e659;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 15vh;
+    /* padding-bottom: 15vh; */
+    line-height: 1.5em;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    font-family: var(--font1);
+    font-size: 1.5em;
+    height: 30vh;
+    
+}
+
+section>h2{
+    background-color: #000000;
+    border-radius: 10px;
+    text-align: center;
+    font-family: var(--font3);
+    font-weight: lighter;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    width: 50vh;  
+}
+
+section.normal {
+    display: inline-block;
+    padding-top: 10vh;
+    text-align: justify;
+    background-color: white;
+    margin: auto;
+}
+section.imagem {
+    position: relative;
+    background-color: rgb(29, 26, 26);
+    box-shadow: 3px 3px 13px 0px #00000059;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img1{
+    background-image: url('/img/imagem1.jpg');
+    background-position: center center;
+    
+}
+section#img2{
+    background-image: url('/img/imagem2.jpg');
+    background-position: center center;
+}
+section#img3{
+    background-image: url('/img/imagem3.jpg');
+    background-position: top center;
+}
+section#img4{
+    background-image: url('/img/imagem4.jpg');
+    background-position:  center center;
+}
+
+section#img5{
+    background-image: url('/img/imagem5.jpg');
+    background-position: left center;
+}
+
+footer {
+    background-color: #000000;
+    padding: 10px;
+
+}
+
+footer>p, a {
+    text-align: center;
+    color: white;
+    font-family: var(--font1);
+}
